@@ -15,7 +15,7 @@ default fs = False
 label start:
     scene bg black
     show lector base at right
-    jump styg_lum
+    jump stygian_blue
     l "Добро пожаловать на нашу скромную лекцию."
     l "Как можно было догадаться из названия, она посвящена цветам."
     l "Не тем, которые на растениях, а тем, которые... эм..."
@@ -83,5 +83,15 @@ label styg_lum:
         l "Вот как это работает: сейчас ты увидишь крестик в цветном круге на сером фоне."
         l "Смотри на него, не отрываясь, пока круг внезапно не станет синим. Он может начать двигаться."
         l "Внимание, вопрос: светлее ли этот синий, чем окружающий чёрный?"
+        hide lector
+        window hide
+        scene sb fatigue
+        pause 20.0
+        scene sb target
+        pause
+        scene bg black
+        show lector base
+        window show
+        l "AWSDASD"
         
     
