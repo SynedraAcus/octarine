@@ -7,7 +7,7 @@ label stygian_blue:
     hide lector
     window hide
     scene sb fatigue
-    $ renpy.pause(5.0, hard=True)
+    $ renpy.pause(20.0, hard=True)
     scene sb target
     pause
     scene bg black
@@ -22,7 +22,7 @@ label stygian_red:
     hide lector
     window hide
     scene sr fatigue
-    $ renpy.pause(5.0, hard=True)
+    $ renpy.pause(20.0, hard=True)
     scene sb target
     pause
     scene bg black
@@ -36,7 +36,7 @@ label luminous_green:
     hide lector
     window hide
     scene lg fatigue
-    $ renpy.pause(5.0, hard=True)
+    $ renpy.pause(20.0, hard=True)
     scene lg target
     pause
     scene bg black
@@ -50,7 +50,7 @@ label luminous_yellow:
     hide lector
     window hide
     scene ly fatigue
-    $ renpy.pause(5.0, hard=True)
+    $ renpy.pause(20.0, hard=True)
     scene lg target
     pause
     scene bg black

@@ -22,6 +22,7 @@ init python:
 ##
 ## Цвета текста в интерфейсе.
 
+#TODO: Set GUI colours, probably shades of gray
 ## Акцентный цвет используется в заголовках и подчёркнутых текстах.
 define gui.accent_color = '#0099cc'
 
@@ -86,6 +87,7 @@ define gui.title_text_size = 50
 ## Главное и игровое меню. #####################################################
 
 ## Изображения, используемые в главном и игровом меню.
+# TODO: set backgrounds, probably shades of gray
 define gui.main_menu_background = "gui/main_menu.png"
 define gui.game_menu_background = "gui/game_menu.png"
 
@@ -165,6 +167,7 @@ define gui.button_text_font = gui.interface_text_font
 ## Размер текста, используемый кнопкой.
 define gui.button_text_size = gui.interface_text_size
 
+#TODO: set hover and selected to gray
 ## Цвет текста в кнопке в различных состояниях.
 define gui.button_text_idle_color = gui.idle_color
 define gui.button_text_hover_color = gui.hover_color

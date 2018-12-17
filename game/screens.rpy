@@ -268,7 +268,7 @@ screen quick_menu():
 init python:
     config.overlay_screens.append("quick_menu")
 
-default quick_menu = True
+default quick_menu = False
 
 style quick_button is default
 style quick_button_text is button_text
@@ -303,13 +303,13 @@ screen navigation():
 
             textbutton _("Начать") action Start()
 
-        else:
-
-            textbutton _("История") action ShowMenu("history")
-
-            textbutton _("Сохранить") action ShowMenu("save")
-
-        textbutton _("Загрузить") action ShowMenu("load")
+#        else:
+#
+#            textbutton _("История") action ShowMenu("history")
+#
+#            textbutton _("Сохранить") action ShowMenu("save")
+#
+#       textbutton _("Загрузить") action ShowMenu("load")
 
         textbutton _("Настройки") action ShowMenu("preferences")
 
@@ -321,13 +321,13 @@ screen navigation():
 
             textbutton _("Главное меню") action MainMenu()
 
-        textbutton _("Об игре") action ShowMenu("about")
-
+#        textbutton _("Об игре") action ShowMenu("about")
+#
         if renpy.variant("pc"):
-
-            ## Помощь не необходима и не относится к мобильным устройствам.
-            textbutton _("Помощь") action ShowMenu("help")
-
+#
+#            ## Помощь не необходима и не относится к мобильным устройствам.
+#            textbutton _("Помощь") action ShowMenu("help")
+#
             ## Кнопка выхода блокирована в iOS и не нужна на Android.
             textbutton _("Выход") action Quit(confirm=not main_menu)
 
@@ -433,41 +433,6 @@ screen game_menu(title, scroll=None, yinitial=0.0):
             frame:
                 style "game_menu_navigation_frame"
 
-            frame:
-                style "game_menu_content_frame"
-
-                if scroll == "viewport":
-
-                    viewport:
-                        yinitial yinitial
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        pagekeys True
-
-                        side_yfill True
-
-                        vbox:
-                            transclude
-
-                elif scroll == "vpgrid":
-
-                    vpgrid:
-                        cols 1
-                        yinitial yinitial
-
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        pagekeys True
-
-                        side_yfill True
-
-                        transclude
-
-                else:
-
-                    transclude
 
     use navigation
 
