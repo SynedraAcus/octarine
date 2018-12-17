@@ -22,7 +22,6 @@ init python:
 ##
 ## Цвета текста в интерфейсе.
 
-#TODO: Set GUI colours, probably shades of gray
 ## Акцентный цвет используется в заголовках и подчёркнутых текстах.
 define gui.accent_color = '#ffffff'
 
